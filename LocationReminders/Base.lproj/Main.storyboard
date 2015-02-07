@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="u58-ks-Ofa">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6750" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="u58-ks-Ofa">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6735"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -17,11 +17,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="C9b-i1-MBu">
-                                <rect key="frame" x="0.0" y="20" width="600" height="520"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="C9b-i1-MBu">
+                                <rect key="frame" x="0.0" y="64" width="600" height="476"/>
                             </mapView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aFH-kj-J20">
-                                <rect key="frame" x="76" y="550" width="59" height="30"/>
+                                <rect key="frame" x="46" y="550" width="59" height="30"/>
                                 <state key="normal" title="Button 1">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -30,7 +30,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fz7-pf-2Se">
-                                <rect key="frame" x="195" y="550" width="59" height="30"/>
+                                <rect key="frame" x="165" y="550" width="59" height="30"/>
                                 <state key="normal" title="Button 2">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -39,7 +39,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K8h-aU-i2D">
-                                <rect key="frame" x="314" y="550" width="59" height="30"/>
+                                <rect key="frame" x="284" y="550" width="59" height="30"/>
                                 <state key="normal" title="Button 3">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -62,7 +62,7 @@
                             <constraint firstItem="K8h-aU-i2D" firstAttribute="bottom" secondItem="fz7-pf-2Se" secondAttribute="bottom" id="diI-Lr-0Xx"/>
                             <constraint firstAttribute="trailingMargin" secondItem="C9b-i1-MBu" secondAttribute="trailing" constant="-16" id="kYz-SF-HiV"/>
                             <constraint firstItem="C9b-i1-MBu" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="kuh-dX-koP"/>
-                            <constraint firstItem="aFH-kj-J20" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="60" id="zab-xj-3V2"/>
+                            <constraint firstItem="aFH-kj-J20" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="zab-xj-3V2"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
