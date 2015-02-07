@@ -12,10 +12,10 @@
                     <items>
                         <table alignment="left" id="s5g-2R-sHC">
                             <items>
-                                <tableRow id="dqk-bG-Hab" customClass="ReminderRowController">
-                                    <group key="rootItem" width="1" alignment="left" id="cCH-db-0m3">
+                                <tableRow identifier="ReminderRowController" id="dqk-bG-Hab" customClass="ReminderRowController">
+                                    <group key="rootItem" width="1" height="26.5" alignment="left" id="cCH-db-0m3">
                                         <items>
-                                            <label alignment="left" text="Label" id="Q2P-RN-FOT"/>
+                                            <label width="1" height="1" alignment="center" verticalAlignment="center" text="Label" textAlignment="left" id="Q2P-RN-FOT"/>
                                         </items>
                                     </group>
                                     <connections>
@@ -33,10 +33,17 @@
             </objects>
             <point key="canvasLocation" x="235" y="347"/>
         </scene>
-        <!--Interface Controller-->
+        <!--Map View Controller-->
         <scene sceneID="sDP-de-Cfd">
             <objects>
-                <controller id="a6D-FH-tdm"/>
+                <controller id="a6D-FH-tdm" customClass="MapViewController">
+                    <items>
+                        <map height="100" alignment="left" id="8Oz-1c-4wH"/>
+                    </items>
+                    <connections>
+                        <outlet property="watchMap" destination="8Oz-1c-4wH" id="NiQ-Er-XQV"/>
+                    </connections>
+                </controller>
             </objects>
             <point key="canvasLocation" x="436" y="345"/>
         </scene>

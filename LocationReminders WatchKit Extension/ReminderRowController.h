@@ -12,4 +12,6 @@
 @interface ReminderRowController : NSObject
 @property (weak, nonatomic) IBOutlet WKInterfaceLabel *reminderLabel;
 
+@property (strong, nonatomic) CLCircularRegion *rowRegion;
+
 @end

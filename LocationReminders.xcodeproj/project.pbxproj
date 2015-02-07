@@ -26,6 +26,7 @@
 		4E65942D1A840A4900189477 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E65942C1A840A4900189477 /* Images.xcassets */; };
 		4E6594301A840A4900189477 /* LocationReminders WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4E6594101A840A4900189477 /* LocationReminders WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		4E9B217C1A8416CE008EA52A /* ReminderRowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E9B217B1A8416CE008EA52A /* ReminderRowController.m */; };
+		4E9B21B01A854D03008EA52A /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E9B21AF1A854D03008EA52A /* MapViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +102,8 @@
 		4E65942C1A840A4900189477 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4E9B217A1A8416BA008EA52A /* ReminderRowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReminderRowController.h; sourceTree = "<group>"; };
 		4E9B217B1A8416CE008EA52A /* ReminderRowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReminderRowController.m; sourceTree = "<group>"; };
+		4E9B21AF1A854D03008EA52A /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		4E9B21B11A854D1E008EA52A /* MapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +203,8 @@
 		4E6594111A840A4900189477 /* LocationReminders WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				4E9B21AF1A854D03008EA52A /* MapViewController.m */,
+				4E9B21B11A854D1E008EA52A /* MapViewController.h */,
 				4E6594151A840A4900189477 /* InterfaceController.h */,
 				4E6594161A840A4900189477 /* InterfaceController.m */,
 				4E9B217A1A8416BA008EA52A /* ReminderRowController.h */,
@@ -424,6 +429,7 @@
 			files = (
 				4E9B217C1A8416CE008EA52A /* ReminderRowController.m in Sources */,
 				4E65941A1A840A4900189477 /* NotificationController.m in Sources */,
+				4E9B21B01A854D03008EA52A /* MapViewController.m in Sources */,
 				4E6594171A840A4900189477 /* InterfaceController.m in Sources */,
 				4E65941D1A840A4900189477 /* GlanceController.m in Sources */,
 			);

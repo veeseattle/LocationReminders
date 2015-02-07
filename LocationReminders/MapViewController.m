@@ -18,9 +18,9 @@
 @property (weak, nonatomic) IBOutlet UIButton *button2;
 @property (weak, nonatomic) IBOutlet UIButton *button3;
 
-@property (strong,nonatomic) CLLocationManager *locationManager;
-
-@property (strong,nonatomic) MKPointAnnotation *selectedAnnotation;
+@property (strong, nonatomic) CLLocationManager *locationManager;
+@property (strong, nonatomic) MKPointAnnotation *selectedAnnotation;
+@property (weak, nonatomic) NSMutableArray *regions;
 
 
 @end
@@ -65,22 +65,29 @@
   MKCoordinateRegion region = {coord, span};
   [_mapView setRegion:(region) animated:(TRUE)];
   
+
+
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+  
+}
+
+//button1
 - (IBAction)button1:(id)sender {
   CLLocationCoordinate2D coord = {.latitude = 47.6097, .longitude = -122.3331};
   MKCoordinateSpan span = {.latitudeDelta = 0.2, .longitudeDelta = 0.2};
   MKCoordinateRegion region = {coord, span};
   [_mapView setRegion:(region) animated:(TRUE)];
 }
-
+//button2
 - (IBAction)button2:(id)sender {
   CLLocationCoordinate2D coord = {.latitude = 28.4186, .longitude = -81.5811};
   MKCoordinateSpan span = {.latitudeDelta = 0.2, .longitudeDelta = 0.2};
   MKCoordinateRegion region = {coord, span};
   [_mapView setRegion:(region) animated:(TRUE)];
 }
-
+//button3
 - (IBAction)button3:(id)sender {
   CLLocationCoordinate2D coord = {.latitude = 52.5163, .longitude = 13.3777};
   MKCoordinateSpan span = {.latitudeDelta = 0.2, .longitudeDelta = 0.2};
@@ -89,6 +96,8 @@
   
   
 }
+
+
 
 //-(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
 //  CLLocation *location = locations.firstObject;
@@ -123,9 +132,8 @@
   NSDictionary *userInfo = notification.userInfo;
   CLCircularRegion *region = userInfo[@"reminder"];
   NSString *notificationName = notification.name;
-  
   MKCircle *circleOverlay = [MKCircle circleWithCenterCoordinate:region.center radius:region.radius];
-  
+  [self.regions addObject:region];
   [self.mapView addOverlay:circleOverlay];
 }
 

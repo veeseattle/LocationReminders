@@ -26,19 +26,36 @@
   CLLocationManager *locationManager = [CLLocationManager new];
   NSSet *regions = locationManager.monitoredRegions;
   NSArray *regionsArray = regions.allObjects;
-
+  //MKPointAnnotation *annotation = [MKPointAnnotation new];
   
-  NSArray *names = @[@"Brad",@"Russell",@"Richard",@"Pete",@"Kam"];
-  [self.table setNumberOfRows:names.count withRowType:@"ReminderRowController"];
+  
+ [self.table setNumberOfRows:regionsArray.count withRowType:@"ReminderRowController"];
  
   NSInteger index = 0;
-  for (NSString *name in names) {
+  for (CLCircularRegion *region in regionsArray) {
     ReminderRowController *rowController = [self.table rowControllerAtIndex:index];
-    [rowController.reminderLabel setText:name];
+    [rowController.reminderLabel setText:region.identifier];
+    CLLocationCoordinate2D center = region.center;
+    rowController.rowRegion = [[CLCircularRegion alloc] initWithCenter:center radius:50 identifier:@"CELL_REGION"];
     index++;
   }
   
+  
   // Configure interface objects here.
+}
+
+
+
+- (id)contextForSegueWithIdentifier:(NSString *)segueIdentifier inTable:(WKInterfaceTable *)table rowIndex:(NSInteger)rowIndex {
+  ReminderRowController *rowController = [self.table rowControllerAtIndex:rowIndex];
+  return rowController.rowRegion;
+  
+}
+//- contextForSegueWithIdentifier --> return region
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+  NSLog(@"asdf");
 }
 
 
