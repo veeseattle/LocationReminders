@@ -8,12 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
+#import "Stack.h"
 
-@interface LocationRemindersTests : XCTestCase
+@interface TestStack : XCTestCase
 
 @end
 
-@implementation LocationRemindersTests
+@implementation TestStack
 
 - (void)setUp {
     [super setUp];
@@ -28,6 +29,27 @@
 - (void)testExample {
     // This is an example of a functional test case.
     XCTAssert(YES, @"Pass");
+}
+
+- (void)testStackPush {
+  Stack *testStack = [[Stack alloc] init];
+  [testStack push:@"Pomeranian"];
+  XCTAssertEqual(testStack.items.count, 1);
+  }
+
+- (void)testStackPop {
+  Stack *testStack = [[Stack alloc] init];
+  id popVar = [testStack pop];
+  XCTAssertNil(popVar);
+}
+
+- (void)testStackPeek {
+  Stack *testStack = [[Stack alloc] init];
+  [testStack push:@"Pomeranian"];
+  [testStack push:@"Chow chow"];
+  [testStack push:@"Keeshond"];
+  id peekVar = [testStack peek];
+  XCTAssertEqual(peekVar, @"Keeshond");
 }
 
 - (void)testPerformanceExample {

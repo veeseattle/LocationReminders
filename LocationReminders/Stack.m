@@ -28,12 +28,13 @@
 
 
 //pop off stack
--(id)pop:(id)item {
+-(id)pop {
   if (self.items !=nil) {
     id tempItem = [self.items lastObject];
     [self.items removeLastObject];
     return tempItem;
   }
+  
   else {
     NSLog(@"The stack is empty");
     return nil;
@@ -41,7 +42,7 @@
 }
 
 //peek
--(id)peek:(id)item {
+-(id)peek {
   return [self.items lastObject];
 }
 

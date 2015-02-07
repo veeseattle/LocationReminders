@@ -14,7 +14,7 @@
 		4E1D91141A808A1400DEAC65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E1D91121A808A1400DEAC65 /* Main.storyboard */; };
 		4E1D91161A808A1400DEAC65 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E1D91151A808A1400DEAC65 /* Images.xcassets */; };
 		4E1D91191A808A1400DEAC65 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E1D91171A808A1400DEAC65 /* LaunchScreen.xib */; };
-		4E1D91251A808A1400DEAC65 /* LocationRemindersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1D91241A808A1400DEAC65 /* LocationRemindersTests.m */; };
+		4E1D91251A808A1400DEAC65 /* TestStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1D91241A808A1400DEAC65 /* TestStack.m */; };
 		4E1D912F1A808BF400DEAC65 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E1D912E1A808BF400DEAC65 /* MapKit.framework */; };
 		4E1D91331A808D3600DEAC65 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1D91321A808D3600DEAC65 /* MapViewController.m */; };
 		4E6594171A840A4900189477 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E6594161A840A4900189477 /* InterfaceController.m */; };
@@ -29,6 +29,7 @@
 		4E9B21B01A854D03008EA52A /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E9B21AF1A854D03008EA52A /* MapViewController.m */; };
 		4E9B21B31A85F912008EA52A /* Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E9B21B21A85F912008EA52A /* Stack.m */; };
 		4E9B21B71A85F9FB008EA52A /* Queue.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E9B21B61A85F9FB008EA52A /* Queue.m */; };
+		4EC1C6B11A86AC1300B84AC6 /* TestQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC1C6B01A86AC1300B84AC6 /* TestQueue.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,7 +85,7 @@
 		4E1D91181A808A1400DEAC65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		4E1D911E1A808A1400DEAC65 /* LocationRemindersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocationRemindersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E1D91231A808A1400DEAC65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4E1D91241A808A1400DEAC65 /* LocationRemindersTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocationRemindersTests.m; sourceTree = "<group>"; };
+		4E1D91241A808A1400DEAC65 /* TestStack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestStack.m; sourceTree = "<group>"; };
 		4E1D912E1A808BF400DEAC65 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		4E1D91311A808CF600DEAC65 /* MapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		4E1D91321A808D3600DEAC65 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
@@ -110,6 +111,7 @@
 		4E9B21B41A85F924008EA52A /* Stack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Stack.h; sourceTree = "<group>"; };
 		4E9B21B51A85F9DB008EA52A /* Queue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Queue.h; sourceTree = "<group>"; };
 		4E9B21B61A85F9FB008EA52A /* Queue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Queue.m; sourceTree = "<group>"; };
+		4EC1C6B01A86AC1300B84AC6 /* TestQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestQueue.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,7 +198,8 @@
 		4E1D91211A808A1400DEAC65 /* LocationRemindersTests */ = {
 			isa = PBXGroup;
 			children = (
-				4E1D91241A808A1400DEAC65 /* LocationRemindersTests.m */,
+				4EC1C6B01A86AC1300B84AC6 /* TestQueue.m */,
+				4E1D91241A808A1400DEAC65 /* TestStack.m */,
 				4E1D91221A808A1400DEAC65 /* Supporting Files */,
 			);
 			path = LocationRemindersTests;
@@ -431,7 +434,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E1D91251A808A1400DEAC65 /* LocationRemindersTests.m in Sources */,
+				4E1D91251A808A1400DEAC65 /* TestStack.m in Sources */,
+				4EC1C6B11A86AC1300B84AC6 /* TestQueue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

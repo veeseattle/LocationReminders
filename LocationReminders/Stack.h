@@ -13,8 +13,8 @@
 @property (strong,nonatomic) NSMutableArray *items;
 
 -(void)push:(id)item;
--(id)pop:(id)item;
--(id)peek:(id)item;
+-(id)pop;
+-(id)peek;
 
 @end
 
