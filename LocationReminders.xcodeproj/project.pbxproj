@@ -27,6 +27,8 @@
 		4E6594301A840A4900189477 /* LocationReminders WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4E6594101A840A4900189477 /* LocationReminders WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		4E9B217C1A8416CE008EA52A /* ReminderRowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E9B217B1A8416CE008EA52A /* ReminderRowController.m */; };
 		4E9B21B01A854D03008EA52A /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E9B21AF1A854D03008EA52A /* MapViewController.m */; };
+		4E9B21B31A85F912008EA52A /* Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E9B21B21A85F912008EA52A /* Stack.m */; };
+		4E9B21B71A85F9FB008EA52A /* Queue.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E9B21B61A85F9FB008EA52A /* Queue.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +106,10 @@
 		4E9B217B1A8416CE008EA52A /* ReminderRowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReminderRowController.m; sourceTree = "<group>"; };
 		4E9B21AF1A854D03008EA52A /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		4E9B21B11A854D1E008EA52A /* MapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		4E9B21B21A85F912008EA52A /* Stack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stack.m; sourceTree = "<group>"; };
+		4E9B21B41A85F924008EA52A /* Stack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Stack.h; sourceTree = "<group>"; };
+		4E9B21B51A85F9DB008EA52A /* Queue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Queue.h; sourceTree = "<group>"; };
+		4E9B21B61A85F9FB008EA52A /* Queue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Queue.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +176,10 @@
 				4E1D91321A808D3600DEAC65 /* MapViewController.m */,
 				4E0DEA861A82BA4200EB2421 /* AddReminderDetailViewController.h */,
 				4E0DEA871A82BA8000EB2421 /* AddReminderDetailViewController.m */,
+				4E9B21B21A85F912008EA52A /* Stack.m */,
+				4E9B21B41A85F924008EA52A /* Stack.h */,
+				4E9B21B51A85F9DB008EA52A /* Queue.h */,
+				4E9B21B61A85F9FB008EA52A /* Queue.m */,
 			);
 			path = LocationReminders;
 			sourceTree = "<group>";
@@ -407,6 +417,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E9B21B71A85F9FB008EA52A /* Queue.m in Sources */,
+				4E9B21B31A85F912008EA52A /* Stack.m in Sources */,
 				4E1D91111A808A1400DEAC65 /* ViewController.m in Sources */,
 				4E1D910E1A808A1400DEAC65 /* AppDelegate.m in Sources */,
 				4E0DEA881A82BA8000EB2421 /* AddReminderDetailViewController.m in Sources */,
